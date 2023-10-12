@@ -9,7 +9,6 @@ class ExpandingDivPage():
     EXP_DIV = (By.CSS_SELECTOR, "div.expand")
     THIS_LINK = (By.CSS_SELECTOR, "a")
 
-
     def go_to_hidden_link(self):
         div = self.driver.find_element(*self.EXP_DIV)
         # mouse over div

@@ -11,5 +11,3 @@ def test_user_can_edit_table_data():
 
     exp_div_page = ExpandingDivPage(driver)
     exp_div_page.go_to_hidden_link()
-
-    sleep(2)
