@@ -1,0 +1,12 @@
+name: "Weekly regression tests"
+on:
+  schedule:
+    - cron:  '*/20 * * * *'    # At every 20th minute
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Cogodzinny test 20 minut po każdej godzinie
+      run: |
+        echo "Regresja ok"
