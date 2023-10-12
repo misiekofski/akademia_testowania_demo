@@ -1,5 +1,3 @@
-from time import sleep
-
 from selenium import webdriver
 
 from pages.dynamic_table_page import DynamicTablePage
