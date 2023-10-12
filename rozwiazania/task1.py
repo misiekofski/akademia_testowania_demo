@@ -1,7 +1,6 @@
 from selenium import webdriver
 
 from pages.bae_page import BasicAjaxPage
-from pages.login_page import LoginPage
 
 
 def test_user_can_select_desktop_and_c():
