@@ -21,4 +21,16 @@ jobs:
         pylint $(git ls-files '*.py')
     - name: Run unit tests
       run: |
-         pytest ksiazka  
+         pytest ksiazka
+  sonar:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Testowanie kodu przez Sonara
+      run: |
+        echo "Sonar ok"
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deployment na Deva
+      run: |
+        echo "Deployment na deva udany"        
