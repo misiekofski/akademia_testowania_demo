@@ -30,4 +30,3 @@ class BasicAjaxPage():
         # click button
         button = self.driver.find_element(*self.CODE_BUTTON)
         button.click()
-

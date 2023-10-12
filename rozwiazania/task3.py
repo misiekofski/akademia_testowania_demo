@@ -1,5 +1,3 @@
-from time import sleep
-
 from selenium import webdriver
 
 from pages.exp_div_page import ExpandingDivPage
