@@ -14,12 +14,3 @@ def test_add_twice_then_lookup_by_name():
     phonebook.add("Kasia", "123456789")
     phonebook.add("Kasia", "000123")
     assert "000123" == phonebook.lookup("Kasia")
-
-
-def test_always_fail():
-    assert 1 == 2
-
-# def test_lookup_by_name():
-#     phonebook = PhoneBook()
-#     phonebook.add("Kasia", "123456789")
-#     assert not "123456789" == phonebook.lookup("missing")
