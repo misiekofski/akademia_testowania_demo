@@ -23,12 +23,14 @@ jobs:
       run: |
          pytest ksiazka
   sonar:
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - name: Testowanie kodu przez Sonara
       run: |
         echo "Sonar ok"
   deployment:
+    needs: [build, sonar]
     runs-on: ubuntu-latest
     steps:
     - name: Deployment na Deva
